@@ -36,7 +36,9 @@
     <p><span class="text-danger">Previous URL:</span> {{long_url}}</p>
   </div>
   {% for i in c.all %}
-  <li>{{i.long_url}},{{link}}{{i.short_url}},{{i.times_followed}}</li>
+  <li><h2>long_url:</h2>{{i.long_url}}</li>
+  <li><h2>short_url:</h2>{{link}}{{i.short_url}}</li>
+  <li><h2>no.Of times opened:</h2>{{i.times_followed}}</li>
   {% endfor %}
   {% endif %}
 </div>
